@@ -4,10 +4,24 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
+
+/* plugins block should be at the top of the file. */
+plugins {
+	id("base")
+}
+
 tasks.create<Copy>("copy") {
 	description = "Copy src to dst."
 	group = "Custom"
 
 	from("src")
 	into("dst")
+}
+
+tasks.create<Zip>("zip") {
+	description = "Archives src in a Zip file."
+	group = "Archive"
+
+	from("src")
+	setArchiveName("basic-demo-1.0.zip")
 }
