@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     static final String TAG = "HandlerSample";
 
-    Button rotateButton;
-    TextView mainTextView;
-    TextView rotateTextView;
+    private Button rotateButton;
+    private TextView mainTextView;
+    private TextView rotateTextView;
 
     boolean isRotating = false;
 
