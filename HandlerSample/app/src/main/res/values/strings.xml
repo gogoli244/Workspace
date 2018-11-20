@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HandlerSample</string>
+    <string name="click_me">Click Me!</string>
+    <string name="rotate_me">Rotate Me!</string>
+    <string name="rotating">Rotating...</string>
+    <string name="stopped">Stopped.</string>
+</resources>
