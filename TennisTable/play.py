@@ -33,6 +33,7 @@ def isTimeOk(playstack, loser, players):
     if (loser == 0):
         players[1] += 1
         players[2] += 1
+        # If current playtack is ok, just print once.
         if isTimeOk(playstack.copy(), 1, players.copy()):
             printLoserForEachGame(playstack)
         isTimeOk(playstack.copy(), 2, players.copy())
@@ -40,6 +41,7 @@ def isTimeOk(playstack, loser, players):
     elif (loser == 1):
         players[0] += 1
         players[2] += 1
+        # If current playtack is ok, just print once.
         if isTimeOk(playstack.copy(), 0, players.copy()):
             printLoserForEachGame(playstack)
         isTimeOk(playstack.copy(), 2, players.copy())
@@ -47,6 +49,7 @@ def isTimeOk(playstack, loser, players):
     else:
         players[0] += 1
         players[1] += 1
+        # If current playtack is ok, just print once.
         if isTimeOk(playstack.copy(), 0, players.copy()):
             printLoserForEachGame(playstack)
         isTimeOk(playstack.copy(), 1, players.copy())
