@@ -22,6 +22,11 @@ def printLoserForEachGame(gameList):
         res += loser[gameList[i]]
     print(res)
 
+# List playstack is the order of losers for each game.
+# Recursively check if the order can match the game numbers of A/B/C.
+# If any of the numbers exceed the condition, return False(stop recursive checking),
+# else if the numbers just match the condition, return True(one of the solution found),
+# else, if it can still be played, continue checking.
 def isTimeOk(playstack, loser, players):
     if (players[0] > A or players[1] > B or players[2] > C):
         #print("Failed: %s" % playstack)
